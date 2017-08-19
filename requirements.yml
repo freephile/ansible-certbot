@@ -1,0 +1,30 @@
+# Use a 'requirements.yml' to install / run other playbooks that yours
+# depends on.
+
+## Our playbook is build on top of Jeff Geerling's certbot role which is found
+## on Ansible Galaxy
+
+Install Jeff Geerling's certbot role from the Ansible Galaxy
+- src: geerlingguy.certbot
+
+
+## Here is how you would install things from other sources:
+#
+## Install a role from GitHub
+#- name: opendaylight
+#  src: https://github.com/dfarrell07/ansible-opendaylight
+#
+## Install a role from a specific git branch
+#- name: opendaylight
+#  src: https://github.com/dfarrell07/ansible-opendaylight
+#  version: origin/master
+#
+## Install a role at a specific tag from GitHub
+#- name: opendaylight
+#  src: https://github.com/dfarrell07/ansible-opendaylight
+#  version: 1.0.0
+#
+## Install a role at a specific commit from GitHub
+#- name: opendaylight
+#  src: https://github.com/dfarrell07/ansible-opendaylight
+#  version: <commit hash>
