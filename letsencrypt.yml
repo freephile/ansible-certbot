@@ -1,7 +1,7 @@
 - hosts: demo
 
   vars:
-    certbot_auto_renew_user: centos
+    certbot_auto_renew_user: root
     certbot_auto_renew_minute: 20
     certbot_auto_renew_hour: 5
 
